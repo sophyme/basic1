@@ -73,15 +73,22 @@ ul {
 }
 /* showcase */
 .showcase {
-  display: grid;
-  grid-gap: 15px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 30vh;
+  align-items: center;
+  padding: 25vh;
 }
 .showcase > h1 {
   font-size: 20vh;
   color: var(--headtitle);
-  margin-bottom: 60px;
   letter-spacing: 10px;
+}
+.showcase > h3 {
+  margin: 60px 0px 15px 0px;
+}
+.showcase > .dash {
+  width: 40px;
+  height: 4px;
+  background-color: #8d8e8e;
 }
