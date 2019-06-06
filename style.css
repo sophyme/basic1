@@ -1,0 +1,87 @@
+:root {
+  --lightback: #fdfcf9;
+  --greenlight: #f4f6f3;
+  --headtitle: #4a4f49;
+  --dark: #363b35;
+  --icon: #f2f3f2;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Tajawal";
+  margin: 0;
+  color: var(--dark);
+  line-height: 20px;
+}
+body {
+  background: var(--lightback);
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 15px;
+}
+h1,
+h3,
+li {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+img {
+  width: 100%;
+}
+/* main */
+.main {
+  background: url(./image/mainimg.jpg) center/cover;
+  height: 100vh;
+  margin: 15px;
+  color: var(--headtitle);
+}
+.main > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  grid-gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.main-nav {
+  padding: 10px 25px;
+  border: 1px solid #363b35;
+  box-shadow: var(--shadow);
+}
+.nav > ul > li > a {
+  text-decoration: none;
+  color: var(--dark);
+}
+.header > .logo {
+  font-size: 1.3rem;
+  color: var(--dark);
+  font-size: bold;
+  letter-spacing: 4px;
+}
+/* showcase */
+.showcase {
+  display: grid;
+  grid-gap: 15px;
+  text-align: center;
+  justify-content: center;
+  padding: 30vh;
+}
+.showcase > h1 {
+  font-size: 20vh;
+  color: var(--headtitle);
+  margin-bottom: 60px;
+  letter-spacing: 10px;
+}
