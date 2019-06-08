@@ -12,6 +12,7 @@
   font-weight: 500;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Tajawal";
   margin: 0;
@@ -97,17 +98,16 @@ ul {
   width: 100%;
   height: 100vh;
   background: var(--greenlight);
-  padding: 80px 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(2, 30% 70%);
+  justify-content: center;
+  padding: 50px 0px;
 }
 .articles > .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
 }
 .articles > .title > .dash {
   height: 2px;
@@ -116,28 +116,25 @@ ul {
 }
 .articles > .contents {
   display: grid;
-  grid-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: start;
+  grid-auto-flow: dense;
+  padding: 0px 50px;
 }
-.contents > .content-box {
-  display: grid;
-  grid-gap: none;
-  grid-template-rows: repeat(2, 1fr);
+.contents > .card {
+  margin-right: 20px;
+  height: inherit;
 }
-.content-box > .box-img {
-  height: 30%;
+.card img {
+  width: 100%;
+  height: inherit;
 }
-.content-box > .text-box {
+.card > .text-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.content-box > .text-box {
   background: var(--lightback);
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .text-box > .dash {
   width: 20px;
@@ -150,4 +147,36 @@ ul {
   text-align: center;
   opacity: 0.7;
   margin-top: 15px;
+}
+/* about */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 70vh;
+}
+.about > img {
+  height: inherit;
+}
+.about > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content h2 {
+  margin: 15px 0px;
+}
+.content p {
+  padding: 20px 0px;
+  line-height: 35px;
+  text-align: justify;
+  text-justify: inter-word;
+  opacity: 0.8;
+  width: 55%;
+}
+.subscribe {
+  width: 100%;
+  height: 30vh;
 }
