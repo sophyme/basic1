@@ -201,3 +201,25 @@ ul {
   border: 1px solid #363b35;
   cursor: pointer;
 }
+/* footer */
+.footer,
+.sns-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  padding: 30px 50px;
+}
+.sns-icon > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--dark);
+  border-radius: 15px;
+  color: var(--lightback);
+  font-size: 12px;
+  margin-right: 10px;
+}
